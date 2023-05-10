@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    body>div.container {
-      margin-top: 100px;
-    }
+  body>div.container {
+    margin-top: 100px;
+  }
   </style>
 
 </head>
@@ -41,22 +41,27 @@
   require_once "header.php";
   ?>
   <div class="container">
-    <form>
+    <form class="" action="display.php" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="video-title">Title</label>
-        <input type="text" class="form-control" id="video-title" placeholder="Enter a title">
+        <input name="title" type="text" class="form-control" id="title" placeholder="Enter a title" required>
       </div>
       <div class="form-group">
         <label for="video-description">Description</label>
-        <input type="text" class="form-control" id="video-description" placeholder="Enter a description">
+        <textarea name="description" class="form-control" id="video-description" placeholder="Enter a description"
+          required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="thumbnail">Upload Thumbnail</label>
+        <input type="file" name="thumbnail" value="" id="thumbnail" required>
       </div>
       <div class="form-group">
         <div class="custom-file">
-          <input type="file" class="custom-file-input" id="customFile">
+          <input type="file" class="custom-file-input" id="customFile" required name="video">
           <label class="custom-file-label" for="customFile">Choose file</label>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" id="uploadbutton" name="upload" value="upload">Submit</button>
       <button type="submit" class="btn btn-danger">Cancel</button>
     </form>
   </div>
