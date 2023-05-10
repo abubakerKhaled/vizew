@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION["userRole"])) {
+  header("location: login.php");
+}
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -20,9 +27,9 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-  body>div.container {
-    margin-top: 100px;
-  }
+    body>div.container {
+      margin-top: 100px;
+    }
   </style>
 
 </head>
@@ -48,8 +55,7 @@
       </div>
       <div class="form-group">
         <label for="video-description">Description</label>
-        <textarea name="description" class="form-control" id="video-description" placeholder="Enter a description"
-          required></textarea>
+        <textarea name="description" class="form-control" id="video-description" placeholder="Enter a description" required></textarea>
       </div>
       <div class="form-group">
         <label for="thumbnail">Upload Thumbnail</label>

@@ -42,15 +42,16 @@ class DBController
 
     public function select_fetch_array($qry)
     {
-        $this->connection = new mysqli($this->dbHost, $this->dbUser, $this->dbPassword, $this->dbName);
+        // Use the existing connection instead of creating a new one
         $result = mysqli_query($this->connection, $qry);
         if (!$result) {
-            echo "Error : " . mysqli_errno($this->connection);
+            echo "Error : " . mysqli_error($this->connection);
             return false;
         } else {
             return mysqli_fetch_array($result);
         }
     }
+
 
     public function insert($qry)
     {
@@ -61,5 +62,10 @@ class DBController
         } else {
             return $this->connection->insert_id();
         }
+    }
+
+    public function getConnection()
+    {
+        return $this->connection;
     }
 }
