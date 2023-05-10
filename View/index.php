@@ -223,7 +223,8 @@ if (!isset($_SESSION["userRole"])) {
         <div class="col-12 col-md-5 col-lg-4">
           <ul class="nav vizew-nav-tab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="post-1-tab" data-toggle="pill" href="#post-1" role="tab" aria-controls="post-1" aria-selected="true">
+              <a class="nav-link active" id="post-1-tab" data-toggle="pill" href="#post-1" role="tab"
+                aria-controls="post-1" aria-selected="true">
                 <!-- Single Blog Post -->
                 <div class="single-blog-post style-2 d-flex align-items-center">
                   <div class="post-thumbnail">
@@ -246,7 +247,8 @@ if (!isset($_SESSION["userRole"])) {
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="post-2-tab" data-toggle="pill" href="#post-2" role="tab" aria-controls="post-2" aria-selected="false">
+              <a class="nav-link" id="post-2-tab" data-toggle="pill" href="#post-2" role="tab" aria-controls="post-2"
+                aria-selected="false">
                 <!-- Single Blog Post -->
                 <div class="single-blog-post style-2 d-flex align-items-center">
                   <div class="post-thumbnail">
@@ -269,7 +271,8 @@ if (!isset($_SESSION["userRole"])) {
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="post-3-tab" data-toggle="pill" href="#post-3" role="tab" aria-controls="post-3" aria-selected="false">
+              <a class="nav-link" id="post-3-tab" data-toggle="pill" href="#post-3" role="tab" aria-controls="post-3"
+                aria-selected="false">
                 <!-- Single Blog Post -->
                 <div class="single-blog-post style-2 d-flex align-items-center">
                   <div class="post-thumbnail">
@@ -292,7 +295,8 @@ if (!isset($_SESSION["userRole"])) {
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="post-4-tab" data-toggle="pill" href="#post-4" role="tab" aria-controls="post-4" aria-selected="false">
+              <a class="nav-link" id="post-4-tab" data-toggle="pill" href="#post-4" role="tab" aria-controls="post-4"
+                aria-selected="false">
                 <!-- Single Blog Post -->
                 <div class="single-blog-post style-2 d-flex align-items-center">
                   <div class="post-thumbnail">
@@ -315,7 +319,8 @@ if (!isset($_SESSION["userRole"])) {
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="post-5-tab" data-toggle="pill" href="#post-5" role="tab" aria-controls="post-5" aria-selected="false">
+              <a class="nav-link" id="post-5-tab" data-toggle="pill" href="#post-5" role="tab" aria-controls="post-5"
+                aria-selected="false">
                 <!-- Single Blog Post -->
                 <div class="single-blog-post style-2 d-flex align-items-center">
                   <div class="post-thumbnail">
@@ -338,7 +343,8 @@ if (!isset($_SESSION["userRole"])) {
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="post-6-tab" data-toggle="pill" href="#post-6" role="tab" aria-controls="post-6" aria-selected="false">
+              <a class="nav-link" id="post-6-tab" data-toggle="pill" href="#post-6" role="tab" aria-controls="post-6"
+                aria-selected="false">
                 <!-- Single Blog Post -->
                 <div class="single-blog-post style-2 d-flex align-items-center">
                   <div class="post-thumbnail">
@@ -361,7 +367,8 @@ if (!isset($_SESSION["userRole"])) {
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="post-7-tab" data-toggle="pill" href="#post-7" role="tab" aria-controls="post-7" aria-selected="false">
+              <a class="nav-link" id="post-7-tab" data-toggle="pill" href="#post-7" role="tab" aria-controls="post-7"
+                aria-selected="false">
                 <!-- Single Blog Post -->
                 <div class="single-blog-post style-2 d-flex align-items-center">
                   <div class="post-thumbnail">
