@@ -5,36 +5,36 @@
   <meta charset="utf-8">
   <title>Your video</title>
   <style media="screen">
-  body {
-    padding: 0px;
-    margin: 0px;
-  }
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
 
-  h1 {
-    background-color: teal;
-    text-align: center;
-    color: white;
-    font-size: 48px;
-    padding: 10px;
-    margin-top: 0px;
-  }
+    h1 {
+      background-color: teal;
+      text-align: center;
+      color: white;
+      font-size: 48px;
+      padding: 10px;
+      margin-top: 0px;
+    }
 
-  ul {
-    list-style-type: none;
-  }
+    ul {
+      list-style-type: none;
+    }
 
-  li {
-    float: left;
-    margin-left: 15px;
-    margin-top: 25px;
-  }
+    li {
+      float: left;
+      margin-left: 15px;
+      margin-top: 25px;
+    }
 
-  p {
-    font-weight: bold;
-    max-width: 380px;
-    font-size: 18px;
-    height: 30px;
-  }
+    p {
+      font-weight: bold;
+      max-width: 380px;
+      font-size: 18px;
+      height: 30px;
+    }
   </style>
 </head>
 
@@ -51,13 +51,12 @@
 
       while ($info = $db->select_fetch_array($sql1)) {
       ?>
-      <li>
-        <p><?php echo $info['title']; ?></p>
-        <video src="video/<?php echo $info['video']; ?>" width="380px"
-          poster="thumbnail/<?php echo $info['thumbnail']; ?>" controls>
+        <li>
+          <p><?php echo $info['title']; ?></p>
+          <video src="video/<?php echo $info['video']; ?>" width="380px" poster="thumbnail/<?php echo $info['thumbnail']; ?>" controls>
 
-        </video>
-      </li>
+          </video>
+        </li>
       <?php
       }
 
